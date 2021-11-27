@@ -18,3 +18,5 @@ function isVaild(item) {
 }
 
 console.log(isVaild("([(])"));
+
+// 比较常见的栈操作  先进后出 
