@@ -1,39 +1,39 @@
 let obj = {
-  val: 'a',
+  val: "A",
   children: [
     {
-      val: 'b',
+      val: "B",
       children: [
         {
-          val: 'd',
-          children: []
+          val: "D",
+          children: [],
         },
         {
-          val: 'e',
-          children: []
-        }
-      ]
+          val: "E",
+          children: [],
+        },
+      ],
     },
     {
-      val: 'c',
+      val: "C",
       children: [
         {
-          val: 'f',
-          children: []
+          val: "F",
+          children: [],
         },
         {
-          val: 'g',
-          children: []
-        }
-      ]
-    }
-  ]
-}
+          val: "G",
+          children: [],
+        },
+      ],
+    },
+  ],
+};
 
 const dfs = (root) => {
   console.log(root.val);
   root.children.map(dfs);
-}
+};
 dfs(obj);
 
 // 深度优先
